@@ -7,6 +7,10 @@
       pkg:
       - yamllint
       - htop
+  - name: Create src directory
+    file:
+      path: ~/src
+      state: directory
   - name: Add a setting to ~/.gitconfig
     community.general.git_config:
       name: user.name
