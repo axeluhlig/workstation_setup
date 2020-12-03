@@ -16,8 +16,9 @@ ansible-galaxy collection install community.general
 sudo -E ansible-pull -U https://github.com/axeluhlig/workstation_setup.git
 ```
 
+### Store git credentials
+```git config --global credential.helper store```
+
 ### ToDos
-- Add yamllint to programms to install
 - Create src directory
 - Clone this repo
-- Setup git (email, username, creds)
