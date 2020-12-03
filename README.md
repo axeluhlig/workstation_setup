@@ -9,9 +9,7 @@ sudo apt upgrade
 sudo apt install ansible
 ```
 
-### Get this repo
+### Run Ansible
 ```
-mkdir ~/src
-cd ~/src
-git clone https://github.com/axeluhlig/workstation_setup.git
+sudo ansible-pull -U https://github.com/axeluhlig/workstation_setup.git
 ```
