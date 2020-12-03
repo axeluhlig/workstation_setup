@@ -22,16 +22,21 @@
     git:
       repo: https://github.com/axeluhlig/github_to_elastic_search.git
       dest: ~/src/github_to_elastic_search
-  - name: Add a setting to ~/.gitconfig
+  - name: git user name
     community.general.git_config:
       name: user.name
       scope: global
       value: Axel Uhlig
-  - name: Add a setting to ~/.gitconfig
+  - name: git mail
     community.general.git_config:
       name: user.email
       scope: global
       value: axel.uhlig@gmail.com
+  - name: git editor
+    community.general.git_config:
+      name: core.editor
+      scope: global
+      value: vim
   - name: Installing Oh My Zsh
     ignore_errors: yes
     shell:
