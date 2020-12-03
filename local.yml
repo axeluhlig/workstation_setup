@@ -17,6 +17,10 @@
     git:
       repo: 'https://github.com/axeluhlig/workstation_setup.git'
       dest: /src/workstation_setup
+  - name: Clone git repo - github_to_elastic_search
+    git:
+      repo: https://github.com/axeluhlig/github_to_elastic_search.git
+      dest: /src/github_to_elastic_search
   - name: Add a setting to ~/.gitconfig
     community.general.git_config:
       name: user.name
