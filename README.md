@@ -11,7 +11,8 @@ sudo apt install ansible
 
 ### Run Ansible
 ```
-sudo ansible-pull -U https://github.com/axeluhlig/workstation_setup.git
+export ANSIBLE_FORCE_COLOR=true
+sudo -E ansible-pull -U https://github.com/axeluhlig/workstation_setup.git
 ```
 
 ### ToDos
