@@ -40,5 +40,5 @@
   - name: Activate ansible color 
     lineinfile:
       path: ~/.zshrc
-      regexp: '^ export ANSIBLE_FORCE_COLOR='
+      regexp: '^export ANSIBLE_FORCE_COLOR='
       line:  export ANSIBLE_FORCE_COLOR=true
