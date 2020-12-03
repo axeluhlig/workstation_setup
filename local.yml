@@ -7,11 +7,14 @@
       pkg:
       - yamllint
       - htop
-      - repo
   - name: Create src directory
     file:
       path: ~/src
       state: directory
+  - name: Clone git repo - workspace
+    git:
+      repo: 'https://github.com/axeluhlig/workstation_setup.git'
+      dest: /src/workstation_setup
   - name: Add a setting to ~/.gitconfig
     community.general.git_config:
       name: user.name
