@@ -7,6 +7,7 @@
       pkg:
       - yamllint
       - htop
+      - zsh
   - name: Create src directory
     file:
       path: ~/src
