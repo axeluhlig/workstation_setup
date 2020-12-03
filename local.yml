@@ -8,6 +8,7 @@
       - yamllint
       - htop
       - zsh
+      - silversearcher-ag
   - name: Create src directory
     file:
       path: ~/src
