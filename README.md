@@ -12,6 +12,7 @@ sudo apt install ansible
 ### Run Ansible
 ```
 export ANSIBLE_FORCE_COLOR=true
+ansible-galaxy collection install community.general
 sudo -E ansible-pull -U https://github.com/axeluhlig/workstation_setup.git
 ```
 
