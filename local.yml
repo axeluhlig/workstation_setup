@@ -9,6 +9,7 @@
       - htop
       - zsh
       - silversearcher-ag
+      - python3-pip
   - name: Create src directory
     file:
       path: ~/src
