@@ -2,7 +2,7 @@ Ansible scripts to setup a fresh Ubuntu focal machine for coding
 
 ## Intial setup
 
-#### Install Ansible
+### Install Ansible
 ```
 sudo apt update 
 sudo apt upgrade
