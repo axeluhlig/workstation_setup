@@ -5,5 +5,5 @@
   - name: Install packages
     apt: name={{item}}
     with_items:
-      - yamlllint
+      - yamllint
       - htop
