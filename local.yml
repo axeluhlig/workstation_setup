@@ -36,3 +36,7 @@
       path: ~/.zshrc
       regexp: '^ZSH_THEME='
       line: ZSH_THEME=jnrowe
+  - name: Applying changes to zsh by sourcing
+    ignore_errors: yes
+    shell:
+      cmd: source ~/.zshrc
