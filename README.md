@@ -21,11 +21,6 @@ sudo -E ansible-pull -U https://github.com/axeluhlig/workstation_setup.git
 git config --global credential.helper store
 ```
 
-### Oh My Zsh
-```
-$ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
 ### ToDo
 - Create src directory
 - Clone this repo
