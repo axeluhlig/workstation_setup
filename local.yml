@@ -37,3 +37,8 @@
       path: ~/.zshrc
       regexp: '^ZSH_THEME='
       line: ZSH_THEME=jnrowe
+  - name: Activate ansible color 
+    lineinfile:
+      path: ~/.zshrc
+      regexp: '^ export ANSIBLE_FORCE_COLOR='
+      line:  export ANSIBLE_FORCE_COLOR=trueee
