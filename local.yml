@@ -41,4 +41,4 @@
     lineinfile:
       path: ~/.zshrc
       regexp: '^ export ANSIBLE_FORCE_COLOR='
-      line:  export ANSIBLE_FORCE_COLOR=trueee
+      line:  export ANSIBLE_FORCE_COLOR=true
