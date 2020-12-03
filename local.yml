@@ -7,8 +7,13 @@
       pkg:
       - yamllint
       - htop
-  - name: Add a setting to gitconfig
+  - name: Add a setting to ~/.gitconfig
     community.general.git_config:
       name: user.name
       scope: global
-      value: Axel
+      value: Axel Uhlig
+  - name: Add a setting to ~/.gitconfig
+    community.general.git_config:
+      name: user.email
+      scope: global
+      value: axel.uhlig@gmail.com
