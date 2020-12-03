@@ -21,6 +21,6 @@ sudo -E ansible-pull -U https://github.com/axeluhlig/workstation_setup.git
 git config --global credential.helper store
 ```
 
-### ToDos
+### ToDo
 - Create src directory
 - Clone this repo
