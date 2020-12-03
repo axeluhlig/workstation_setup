@@ -11,4 +11,4 @@
     community.general.git_config:
       name: user.name
       scope: global
-      value: Axel Uhlig
+      value: Axel
