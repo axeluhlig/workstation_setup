@@ -3,4 +3,7 @@
   become: true
   tasks:
   - name: Install packages
-    apt: name: ['yamllint', 'htop']
+    apt:
+      pkg:
+      - foo
+      - foo-tools
