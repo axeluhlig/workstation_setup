@@ -28,5 +28,5 @@
       value: axel.uhlig@gmail.com
   - name: Installing Oh My Zsh
     shell:
-      cmd: "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      cmd: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
       chdir: ~
