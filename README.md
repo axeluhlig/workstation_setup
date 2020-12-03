@@ -13,3 +13,9 @@ sudo apt install ansible
 ```
 sudo ansible-pull -U https://github.com/axeluhlig/workstation_setup.git
 ```
+
+### ToDos
+- Add yamllint to programms to install
+- Create src directory
+- Clone this repo
+- Setup git (email, username, creds)
