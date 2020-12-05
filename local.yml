@@ -13,6 +13,10 @@
     apt_key:
       url: https://download.docker.com/linux/ubuntu/gpg
       state: present
+  - name: Add docker repo
+    become: true
+    shell:
+      cmd: add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
   - name: Install packages for real
     become: true
     apt:
