@@ -1,8 +1,21 @@
 ---
 - hosts: localhost
   tasks:
+  - name: Install packages prep
+    become: true
+    apt:
+      pkg:
+      - apt-transport-https
+      - ca-certificates
+      - gnupg-agent
+      - software-properties-common
+  - name: Add Docker’s official GPG key
+    become: true
+    shell:
+      cmd: curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
   - name: Install packages
     become: true
+    update_cache: yes
     apt:
       pkg:
       - yamllint
@@ -10,7 +23,9 @@
       - zsh
       - silversearcher-ag
       - python3-pip
-      - docker
+      - docker-ce 
+      - docker-ce-cli 
+      - containerd.io
   - name: Create src directory
     file:
       path: ~/src
