@@ -10,9 +10,9 @@
       - gnupg-agent
       - software-properties-common
   - name: Add Docker’s official GPG key
-    become: true
-    shell:
-      cmd: sh -c "$(curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -)"
+    apt_key:
+      url: https://download.docker.com/linux/ubuntu/gpg
+      state: present
   - name: Install packages
     become: true
     update_cache: yes
