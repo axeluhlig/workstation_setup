@@ -15,8 +15,8 @@
       state: present
   - name: Install packages for real
     become: true
-    update_cache: yes
     apt:
+      update_cache: yes
       pkg:
       - yamllint
       - htop
