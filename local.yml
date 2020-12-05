@@ -13,7 +13,7 @@
     apt_key:
       url: https://download.docker.com/linux/ubuntu/gpg
       state: present
-  - name: Install packages
+  - name: Install packages for real
     become: true
     update_cache: yes
     apt:
