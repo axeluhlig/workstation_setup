@@ -12,7 +12,7 @@
   - name: Add Docker’s official GPG key
     become: true
     shell:
-      cmd: "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -"
+      cmd: sh -c "$(curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -)"
   - name: Install packages
     become: true
     update_cache: yes
