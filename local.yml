@@ -10,6 +10,7 @@
       - zsh
       - silversearcher-ag
       - python3-pip
+      - docker
   - name: Create src directory
     file:
       path: ~/src
