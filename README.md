@@ -18,6 +18,6 @@ sudo -E ansible-pull -U https://github.com/axeluhlig/workstation_setup.git
 
 ### Aftermath
 ```
-source ~/.zshrc # applying changes to zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # in case zsh did not yet show up. A reboot is also necessary to make it the default for every new terminal
 git config --global credential.helper store # storing git credentials
 ```
